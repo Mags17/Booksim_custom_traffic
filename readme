@@ -1,0 +1,8 @@
+"Booksim_qt_analytic_compare"
+
+This is a booksim simulator compiled in QTcreator.
+An external program "pgm_within_pgm" calls this programm but it can be used standalone also
+It reads one mapping and injection rate from the mapping file and generated the avg packet latency and 
+writes in output file.
+The mapping number to be read is decided by the arguement which is passed to the program while calling it by
+an external program "pgm_within_pgm"
