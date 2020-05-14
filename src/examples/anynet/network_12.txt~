@@ -1,0 +1,13 @@
+Router 0 Router 1 1 Router 2 2 Router 3 3 Router 4 1 Router 8 2 
+Router 1 Router 0 1 Router 2 1 Router 3 2 Router 5 1 Router 9 2 
+Router 2 Router 0 2 Router 1 1 Router 3 1 Router 6 1 Router 10 2 
+Router 3 Router 0 3 Router 1 2 Router 2 1 Router 7 1 Router 11 2 
+Router 4 Router 0 1 Router 5 1 Router 6 2 Router 7 3 Router 8 1 
+Router 5 Router 1 1 Router 4 1 Router 6 1 Router 7 2 Router 9 1 
+Router 6 Router 2 1 Router 4 2 Router 5 1 Router 7 1 Router 10 1 
+Router 7 Router 3 1 Router 4 3 Router 5 2 Router 6 1 Router 11 1 
+Router 8 Router 0 2 Router 4 1 Router 9 1 Router 10 2 Router 11 3 
+Router 9 Router 1 2 Router 5 1 Router 8 1 Router 10 1 Router 11 2 
+Router 10 Router 2 2 Router 6 1 Router 8 2 Router 9 1 Router 11 1 
+Router 11 Router 3 2 Router 7 1 Router 8 3 Router 9 2 Router 10 1 
+

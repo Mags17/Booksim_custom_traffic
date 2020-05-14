@@ -1,0 +1,39 @@
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
+#include <math.h>
+using namespace std;
+
+
+int main()
+{   ofstream out("network_64",ios::out);
+	int row_1,row_2; 
+	int col_1,col_2;
+	int max_rows = 8, max_cols = 8;
+	int routers = max_rows*max_cols;
+	int buffer = 6;
+    int i,j;
+    for (i = 0; i<routers; i++)
+    {   row_1 = int(i/max_cols);
+        col_1 = i%max_cols;
+    	out<<"router "<<i<<" node "<<i<<" 1 ";
+    	for (j=0;j<routers;j++)
+        {
+            row_2 = int(j/max_cols);
+            col_2 = j%max_cols;
+            if(row_1 == row_2 && col_1 != col_2)
+            {
+                out<<"router "<<j<<" "<<abs(col_1-col_2)<<" ";
+            }
+            else if(col_1 == col_2 && row_1 != row_2)
+            {
+                out<<"router "<<j<<" "<<abs(row_1-row_2)<<" ";
+            }
+           
+        }
+         out<<"\n";
+    }
+	out<<endl;
+	out.close();
+    return 0;
+}
